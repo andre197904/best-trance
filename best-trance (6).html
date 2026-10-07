@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Best Trance | The best trance radio stations, live 24/7</title>
+<meta name="description" content="Eight handpicked trance and electronic radio streams, on air 24/7. Curated by DJ Dobriy.">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0618;--panel:#141028;--line:#2a2250;--text:#efeaff;--mute:#9d93c4;--violet:#8b6bff;--pink:#ff4f93;--amber:#ffb454}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Manrope,system-ui,sans-serif;background:radial-gradient(1200px 600px at 80% -10%,#2b1466 0,transparent 60%),radial-gradient(900px 500px at 0% 20%,#4a0f45 0,transparent 55%),var(--bg);color:var(--text);line-height:1.6;padding-bottom:96px}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:20;background:rgba(10,6,24,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:Unbounded;font-weight:900;font-size:1.15rem;text-decoration:none;letter-spacing:.02em}
+.logo i{font-style:normal;background:linear-gradient(90deg,var(--pink),var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+nav a{margin-left:22px;text-decoration:none;color:var(--mute);font-weight:500;font-size:.95rem}
+nav a:hover{color:var(--text)}
+.hero{padding:72px 0 40px}
+.hero h1{font-family:Unbounded;font-weight:900;font-size:clamp(2.6rem,9vw,6rem);line-height:.98;letter-spacing:-.03em}
+.hero h1 span{display:block;background:linear-gradient(90deg,var(--violet),var(--pink) 55%,var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:540px;margin:22px 0 28px;color:var(--mute);font-size:1.1rem}
+.btn{display:inline-flex;align-items:center;gap:10px;border:0;cursor:pointer;font:700 1rem Manrope;padding:14px 26px;border-radius:999px;background:linear-gradient(90deg,var(--pink),var(--amber));color:#1a0a1f;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line);margin-left:10px}
+.eq{display:flex;align-items:flex-end;gap:5px;height:90px;margin-top:44px}
+.eq b{flex:1;max-width:18px;height:12%;border-radius:4px 4px 0 0;background:linear-gradient(var(--pink),var(--violet));transition:height .12s}
+.live{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:.85rem;color:var(--amber);margin-bottom:18px}
+.live:before{content:"";width:9px;height:9px;border-radius:50%;background:var(--pink);animation:p 1.6s infinite}
+@keyframes p{50%{opacity:.25}}
+.ad{border:1px dashed var(--line);border-radius:12px;color:var(--mute);font-size:.8rem;display:flex;align-items:center;justify-content:center;text-align:center;background:rgba(20,16,40,.5)}
+.ad.top{height:90px;margin:24px 0}
+.ad.side{display:none;position:fixed;top:120px;width:160px;height:600px}
+.ad.side.l{left:max(8px,calc(50% - 520px - 180px))}.ad.side.r{right:max(8px,calc(50% - 520px - 180px))}
+@media(min-width:1380px){.ad.side{display:flex}}
+h2{font-family:Unbounded;font-size:1.7rem;margin:56px 0 6px}
+.sub{color:var(--mute);margin-bottom:24px}
+.list{border-top:1px solid var(--line)}
+.st{display:grid;grid-template-columns:56px 1fr auto;gap:18px;align-items:center;padding:18px 8px;border-bottom:1px solid var(--line);cursor:pointer;border-radius:10px;transition:background .2s}
+.st:hover,.st.on{background:var(--panel)}
+.st .pl{width:48px;height:48px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-size:1rem;background:var(--bg)}
+.st.on .pl{background:linear-gradient(135deg,var(--pink),var(--amber));color:#1a0a1f;border:0}
+.st h3{font-family:Unbounded;font-size:1.02rem;font-weight:500}
+.st p{color:var(--mute);font-size:.92rem;max-width:560px}
+.tag{font-size:.8rem;color:var(--amber);white-space:nowrap;text-align:right}
+.st.bad{opacity:.45}
+@media(max-width:640px){.st{grid-template-columns:48px 1fr}.tag{display:none}nav a:not(:last-child){display:none}}
+.about p{max-width:640px;color:var(--mute);margin-bottom:14px}
+.about strong{color:var(--text)}
+footer{margin-top:80px;border-top:1px solid var(--line);padding:36px 0 24px;background:rgba(10,6,24,.6)}
+.stats{display:flex;gap:48px;flex-wrap:wrap;margin-bottom:24px}
+.stats div{font-size:.85rem;color:var(--mute)}
+.stats strong{display:block;font-family:Unbounded;font-size:1.9rem;color:var(--text);font-weight:700}
+footer small{color:var(--mute)}
+#bar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(20,16,40,.96);backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+#bar .wrap{display:flex;align-items:center;gap:16px;height:80px}
+#bar .btn{padding:0;width:52px;height:52px;justify-content:center;flex:none}
+#bar .meta{flex:1;min-width:0}
+#bar .meta b{display:block;font-family:Unbounded;font-size:.95rem;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#bar .meta span{color:var(--mute);font-size:.85rem}
+#vol{width:110px;accent-color:var(--pink)}
+@media(max-width:560px){#vol{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+<style>
+/* Live background: falling translucent notes (added) */
+#bgnotes{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+</style>
+<style>
+/* DJ Dobriy avatar in header, top right (added) */
+header .wrap{justify-content:flex-start}
+header .logo{margin-right:auto}
+.avatar{display:block;width:48px;height:48px;margin-left:22px;flex:none;border-radius:12px;overflow:hidden;border:2px solid transparent;background:linear-gradient(var(--bg),var(--bg)) padding-box,linear-gradient(135deg,var(--violet),var(--pink),var(--amber)) border-box;transition:transform .2s}
+.avatar:hover{transform:scale(1.08)}
+.avatar img{display:block;width:100%;height:100%;object-fit:cover}
+</style>
+<style>
+/* Stage-light background: slowly sweeping laser beams (added) */
+#bglights{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-2;overflow:hidden;pointer-events:none}
+#bglights i{position:absolute;top:-8%;width:34vw;max-width:520px;height:135vh;margin-left:-17vw;transform-origin:50% 0;mix-blend-mode:screen;opacity:.55;clip-path:polygon(49% 0,51% 0,100% 100%,0 100%);animation:bgsweep 12s ease-in-out infinite alternate}
+#bglights i:nth-child(1){left:14%;background:linear-gradient(rgba(139,107,255,.55),rgba(139,107,255,0) 78%);--a:-28deg;--b:14deg}
+#bglights i:nth-child(2){left:38%;background:linear-gradient(rgba(255,79,147,.5),rgba(255,79,147,0) 78%);--a:20deg;--b:-18deg;animation-duration:15s;animation-delay:-5s}
+#bglights i:nth-child(3){left:62%;background:linear-gradient(rgba(80,200,255,.4),rgba(80,200,255,0) 78%);--a:-16deg;--b:24deg;animation-duration:11s;animation-delay:-3s}
+#bglights i:nth-child(4){left:86%;background:linear-gradient(rgba(255,180,84,.38),rgba(255,180,84,0) 78%);--a:26deg;--b:-14deg;animation-duration:14s;animation-delay:-8s}
+#bglights:after{content:"";position:absolute;left:0;right:0;bottom:0;height:45%;background:radial-gradient(70% 100% at 50% 100%,rgba(139,107,255,.22),transparent 70%)}
+@keyframes bgsweep{from{transform:rotate(var(--a))}to{transform:rotate(var(--b))}}
+@media(max-width:640px){#bglights i:nth-child(2),#bglights i:nth-child(4){display:none}#bglights i{width:60vw;margin-left:-30vw}}
+</style>
+<style>
+/* Mobile adaptation: iPhone & Android (added) */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:72px}
+a,button,.st,input{-webkit-tap-highlight-color:transparent}
+.btn,.st{touch-action:manipulation}
+header{-webkit-backdrop-filter:blur(10px)}
+#bar{-webkit-backdrop-filter:blur(12px)}
+.hero h1{overflow-wrap:break-word}
+.ad.top{max-width:100%;overflow:hidden}
+#bglights i{will-change:transform}
+@media(hover:none){.st:hover{background:transparent}.st.on:hover{background:var(--panel)}.avatar:hover{transform:none}}
+@media(max-width:640px){
+.wrap{padding:0 16px}
+header .wrap{height:56px}
+.logo{font-size:1rem}
+nav a{margin-left:14px;font-size:.9rem}
+.avatar{width:40px;height:40px;margin-left:14px;border-radius:10px}
+.hero{padding:40px 0 28px}
+.hero p{font-size:1rem}
+.st{padding:14px 6px;gap:14px}
+.st .tag{display:block;grid-column:2;text-align:left;white-space:normal;margin-top:-6px}
+h2{font-size:1.4rem;margin-top:44px}
+.stats{gap:28px}.stats strong{font-size:1.6rem}
+#bar .wrap{gap:12px;height:72px}
+#bar .btn{width:48px;height:48px}
+#bar .meta span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body{padding-bottom:88px}
+}
+@media(max-width:480px){
+.hero .btn{width:100%;justify-content:center}
+.hero .btn.ghost{margin:10px 0 0}
+.hero h1{font-size:clamp(2.1rem,10.5vw,2.6rem)}
+.eq{height:64px;gap:3px}
+}
+@media(max-height:450px) and (orientation:landscape){header .wrap{height:52px}#bar .wrap{height:60px}body{padding-bottom:76px}}
+</style>
+</head>
+<body>
+<div id="bglights" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<canvas id="bgnotes" aria-hidden="true"></canvas>
+<div class="ad side l">Partner ad<br>160 × 600</div>
+<div class="ad side r">Partner ad<br>160 × 600</div>
+
+<header><div class="wrap">
+<a class="logo" href="#top">BEST <i>TRANCE</i></a>
+<nav><a href="#stations">Stations</a><a href="#about">About</a><a href="#stats">Live stats</a></nav>
+<a class="avatar" href="#about" title="DJ Dobriy"><img src="data:image/webp;base64,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" alt="DJ Dobriy" width="48" height="48"></a>
+</div></header>
+
+<main class="wrap" id="top">
+<section class="hero">
+<div class="live">ON AIR 24/7</div>
+<h1>The best trance radio<span>never goes off air.</span></h1>
+<p>Eight handpicked trance streams: uplifting, progressive, classic and club. Pick one and press play.</p>
+<button class="btn" id="heroPlay">▶ Play now</button><a class="btn ghost" href="#stations">See all stations</a>
+<div class="eq" id="eq" aria-hidden="true"></div>
+</section>
+
+<div class="ad top">Partner banner · 728 × 90</div>
+
+<section id="stations">
+<h2>8 stations, live now</h2>
+<p class="sub">Click any station to start listening. If a stream is down, it is marked offline and you can pick another.</p>
+<div class="list" id="list"></div>
+</section>
+
+<section class="about" id="about">
+<h2>About Best Trance</h2>
+<p><strong>Best Trance</strong> is a hand-built directory of the best trance radio stations on the web, curated by <strong>DJ Dobriy</strong>.</p>
+<p>Every station here broadcasts around the clock, so there is always something playing, whether you want euphoric uplifting anthems, long progressive journeys or deep space-electronic.</p>
+<p>The streams are run by their own broadcasters. We simply link them in one clean player.</p>
+</section>
+</main>
+
+<footer id="stats"><div class="wrap">
+<div class="stats">
+<div><strong id="online">–</strong>listening right now</div>
+<div><strong id="total">–</strong>total visits</div>
+</div>
+<small>© <span id="yr"></span> Best Trance · Curated by DJ Dobriy · All stations on air 24/7</small>
+</div></footer>
+
+<div id="bar"><div class="wrap">
+<button class="btn" id="pp" aria-label="Play or pause">▶</button>
+<div class="meta"><b id="nt">Choose a station</b><span id="ng">Eight streams, 24/7</span></div>
+<input id="vol" type="range" min="0" max="1" step=".01" value=".8" aria-label="Volume">
+</div></div>
+<audio id="au" preload="none"></audio>
+
+<script>
+const S=[
+{n:"Sunshine Live Trance",g:"Uplifting & club trance",l:"Mannheim, Germany",d:"German dance-radio giant with a dedicated trance channel: big-room melodies, vocal classics and fresh club cuts.",u:"https://stream.sunshine-live.de/trance/mp3-192/"},
+{n:"Dance Wave! Trance",g:"Classic & modern trance",l:"Europe",d:"Non-stop mix of classic and current trance with a steady club energy.",u:"https://dancewave.online/dance.mp3"},
+{n:"1.FM Amsterdam Trance",g:"Uplifting & vocal trance",l:"Europe",d:"Non-stop uplifting and vocal trance: chart favourites, fresh releases and club anthems around the clock.",u:"https://strm112.1.fm/atr_mobile_mp3"},
+{n:"Hirschmilch Trance",g:"Melodic trance",l:"Germany",d:"Melodic and psychedelic-leaning trance from the Hirschmilch collective.",u:"https://hirschmilch.de:7001/trance.mp3"},
+{n:"SkellyWays Radio Trance",g:"Trance, 320 kbps",l:"Online",d:"High-bitrate trance stream with modern anthems and euphoric builds around the clock.",u:"https://s31.ssl-stream.com:8200/radio.mp3"},
+{n:"SkellyWays Classic Trance",g:"Classic trance",l:"Online",d:"The golden era of trance: legendary tracks and timeless remixes from the 90s and 2000s.",u:"https://s31.ssl-stream.com:8210/radio.mp3"},
+{n:"PlayTrance Radio",g:"Uplifting, tech & hard trance",l:"Online",d:"A long-running trance channel covering uplifting, progressive and tech trance in one stream.",u:"https://live-ff.playtrance.com/playtrance-main.mp3"},
+{n:"GalacticFM Trance",g:"Progressive house & trance",l:"Online",d:"Deep, driving progressive house and trance for long listening sessions.",u:"https://a1.asurahosting.com/listen/galacticfm_-_progressive_house__trance/radio.mp3"}
+];
+const $=id=>document.getElementById(id),au=$('au');let cur=-1,play=false;
+$('yr').textContent=new Date().getFullYear();
+function render(){
+$('list').innerHTML=S.map((s,i)=>`<div class="st${i===cur&&play?' on':''}${s.bad?' bad':''}" tabindex="0" role="button" data-i="${i}" aria-label="Play ${s.n}"><div class="pl">${i===cur&&play?'❚❚':'▶'}</div><div><h3>${s.n}</h3><p>${s.d}</p></div><div class="tag">${s.bad?'Offline':s.g}<br><span style="color:var(--mute)">${s.l}</span></div></div>`).join('');
+}
+function pick(i){
+const s=S[i];cur=i;au.src=s.u;s.bad=false;
+$('nt').textContent=s.n;$('ng').textContent='Connecting…';
+au.play().then(()=>{play=true;$('pp').textContent='❚❚';$('ng').textContent=s.g+' · '+s.l;render()}).catch(()=>fail(i));
+}
+function fail(i){S[i].bad=true;play=false;$('pp').textContent='▶';$('nt').textContent=S[i].n;$('ng').textContent='This stream is offline. Choose another station.';render()}
+au.onerror=()=>{if(cur>-1&&au.src)fail(cur)};
+$('list').onclick=e=>{const c=e.target.closest('.st');if(!c)return;const i=+c.dataset.i;if(i===cur&&play){au.pause();play=false;$('pp').textContent='▶';render()}else pick(i)};
+$('list').onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();e.target.click()}};
+function toggle(){if(cur<0)return pick(0);if(play){au.pause();play=false;$('pp').textContent='▶';render()}else au.play().then(()=>{play=true;$('pp').textContent='❚❚';render()}).catch(()=>pick(cur))}
+$('pp').onclick=toggle;$('heroPlay').onclick=toggle;
+$('vol').oninput=e=>au.volume=e.target.value;au.volume=.8;
+render();
+
+// Equalizer (decorative, animates while playing)
+const eq=$('eq');for(let i=0;i<48;i++)eq.appendChild(document.createElement('b'));
+setInterval(()=>{[...eq.children].forEach((b,i)=>{b.style.height=(play?12+Math.abs(Math.sin(Date.now()/260+i*.6))*Math.random()*88:8)+'%'})},140);
+
+// Visitor counters.
+// The old service (CounterAPI v1) was shut down on 7 Aug 2026, so the shared counters stopped working.
+// Now uses Abacus (free, no sign-up). Total visits = shared counter for all visitors; "listening now" = visitors who pinged in the last minute.
+const NS='best-trance-dj-dobriy',API='https://abacus.jasoncameron.dev/';
+const fmt=n=>Number(n).toLocaleString('en-US');
+async function hit(op,key){try{const ctl=new AbortController(),to=setTimeout(()=>ctl.abort(),6000);const r=await fetch(API+op+'/'+NS+'/'+key,{cache:'no-store',signal:ctl.signal});clearTimeout(to);if(!r.ok)return null;const v=(await r.json()).value;return typeof v==='number'?v:null}catch(e){return null}}
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+function sess(k,v){try{if(v===undefined)return sessionStorage.getItem(k);sessionStorage.setItem(k,v)}catch(e){return null}}
+// Show the last known total right away (or a dash) until the service answers
+const cached=ls('bt_total');$('total').textContent=cached?fmt(cached):'\u2013';$('online').textContent='1';
+// 1) Total visits: +1 once per browser session, then just read the shared number
+async function total(){
+const t=sess('bt_counted')?await hit('get','visits'):await hit('hit','visits');
+if(t!=null){sess('bt_counted','1');$('total').textContent=fmt(t);ls('bt_total',t)}
+}
+// 2) Listening now: each browser pings once a minute into a one-minute bucket (reloads and extra tabs do not add pings); the number shown is the larger of the current and previous bucket
+const BK=60000;
+async function beat(){
+if(document.hidden&&!play)return;
+const b=Math.floor(Date.now()/BK);let cur;
+if(+ls('bt_beat')!==b){ls('bt_beat',b);cur=await hit('hit','on-'+b)}else cur=await hit('get','on-'+b);
+if(cur==null)return;
+const prev=await hit('get','on-'+(b-1))||0;
+$('online').textContent=fmt(Math.max(1,cur,prev));
+}
+total();beat();setInterval(total,60000);setInterval(beat,BK);
+</script>
+<script>
+// Live background: falling translucent notes (added)
+(function(){
+var cv=document.getElementById('bgnotes');if(!cv)return;
+var mq=window.matchMedia('(prefers-reduced-motion: reduce)');
+if(mq.matches){cv.style.display='none';return}
+var ctx=cv.getContext('2d'),W=0,H=0,dpr=1,N=[],raf=0;
+var G=['\u266A','\u266B','\u2669','\u266C'],C=['139,107,255','255,79,147','255,180,84'];
+function rnd(a,b){return a+Math.random()*(b-a)}
+function make(top){
+return{x:rnd(0,W),y:top?rnd(-H,0):rnd(0,H),s:rnd(16,44),v:rnd(.25,.8),a:rnd(.07,.22),
+g:G[Math.random()*G.length|0],c:C[Math.random()*C.length|0],
+ph:rnd(0,6.28),sw:rnd(.4,1.1),amp:rnd(8,28),r:rnd(-.5,.5),rs:rnd(-.004,.004)}
+}
+function resize(){
+dpr=Math.min(window.devicePixelRatio||1,2);W=innerWidth;H=innerHeight;
+cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+var n=Math.max(14,Math.min(42,Math.round(W/34)));
+while(N.length<n)N.push(make(false));N.length=n;
+}
+var t0=performance.now();
+function frame(now){
+var t=(now-t0)/1000;ctx.clearRect(0,0,W,H);
+for(var i=0;i<N.length;i++){
+var o=N[i];o.y+=o.v;o.r+=o.rs;
+if(o.y>H+60){N[i]=o=make(true);o.y=-50}
+var x=o.x+Math.sin(t*o.sw+o.ph)*o.amp;
+ctx.save();ctx.translate(x,o.y);ctx.rotate(o.r);
+ctx.font=o.s+'px "Segoe UI Symbol","Noto Sans Symbols 2","Apple Symbols",serif';
+ctx.fillStyle='rgba('+o.c+','+o.a+')';ctx.fillText(o.g,0,0);ctx.restore();
+}
+raf=requestAnimationFrame(frame);
+}
+function start(){if(!raf)raf=requestAnimationFrame(frame)}
+function stop(){cancelAnimationFrame(raf);raf=0}
+resize();addEventListener('resize',resize);
+document.addEventListener('visibilitychange',function(){document.hidden?stop():start()});
+(mq.addEventListener?mq.addEventListener('change',function(){if(mq.matches){stop();cv.style.display='none'}else{cv.style.display='';start()}}):0);
+start();
+})();
+</script>
+<script>
+// Lock-screen / notification controls on iPhone and Android (added)
+(function(){
+try{
+if(!('mediaSession' in navigator))return;
+var au=document.getElementById('au'),pp=document.getElementById('pp'),ms=navigator.mediaSession;
+au.addEventListener('playing',function(){
+var s=S[cur];if(!s)return;var im=document.querySelector('.avatar img');
+ms.metadata=new MediaMetadata({title:s.n,artist:s.g,album:'Best Trance',artwork:im?[{src:im.src,sizes:'128x128',type:'image/webp'}]:[]});
+});
+ms.setActionHandler('play',function(){if(!play)pp.click()});
+ms.setActionHandler('pause',function(){if(play)pp.click()});
+ms.setActionHandler('previoustrack',function(){pick((Math.max(cur,0)-1+S.length)%S.length)});
+ms.setActionHandler('nexttrack',function(){pick((cur+1)%S.length)});
+}catch(e){}
+})();
+</script>
+</body>
+</html>
