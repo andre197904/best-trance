@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://best-trance.idavirukomp.ee/sitemap.xml
